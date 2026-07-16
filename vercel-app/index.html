@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Studio7 Portal - Store 242</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app home-mode">
+    <main>
+      <section class="panel active home-panel" id="home">
+        <div class="home-hero">
+          <h1>Studio<span>7</span></h1>
+          <p>STORE ID: 242</p>
+        </div>
+        <div class="home-divider"></div>
+        <div class="home-menu">
+          <button class="home-card" type="button" data-panel="sale">Sale Promotion</button>
+          <button class="home-card" type="button" data-panel="card">Card Promotion</button>
+          <button class="home-card true-tone" type="button" data-panel="true">Promotion True</button>
+          <button class="home-card dark-tone" type="button" data-panel="ufund">Ufund Calculator</button>
+          <button class="home-card blue-tone" type="button" data-panel="stock">Stock Inventory</button>
+          <button class="home-card" type="button" data-panel="guild">Guild line</button>
+        </div>
+      </section>
+
+      <section class="panel viewer-panel" id="sale">
+        <div class="panel-toolbar">
+          <div>
+            <h2>Sale Promotion</h2>
+            <p>อัปเดตรูปโปรได้จากไฟล์ config/promotions.json</p>
+          </div>
+          <button class="back-button" type="button" data-back-home>Back</button>
+        </div>
+        <div class="image-stack" id="saleViewer"></div>
+      </section>
+
+      <section class="panel viewer-panel" id="card">
+        <div class="panel-toolbar">
+          <div>
+            <h2>Card Promotion</h2>
+            <p>ข้อมูลบัตรและเงื่อนไขผ่อน</p>
+          </div>
+          <button class="back-button" type="button" data-back-home>Back</button>
+        </div>
+        <div class="simple-grid" id="cardGrid"></div>
+      </section>
+
+      <section class="panel viewer-panel" id="ufund">
+        <div class="panel-toolbar">
+          <div>
+            <h2>Ufund Calculator</h2>
+            <p>คำนวณยอดผ่อนเบื้องต้น</p>
+          </div>
+          <button class="back-button" type="button" data-back-home>Back</button>
+        </div>
+        <div class="calc-grid">
+          <label>ราคาสินค้า<input id="ufundPrice" type="number" value="32900" inputmode="decimal"></label>
+          <label>เงินดาวน์<input id="ufundDown" type="number" value="3000" inputmode="decimal"></label>
+          <label>จำนวนเดือน<select id="ufundMonths"><option>6</option><option selected>10</option><option>12</option><option>18</option><option>24</option></select></label>
+          <label>ดอกเบี้ยต่อปี (%)<input id="ufundRate" type="number" value="0" inputmode="decimal"></label>
+        </div>
+        <div class="result-box">
+          <span>ยอดผ่อนประมาณ</span>
+          <strong id="ufundMonthly">฿0</strong>
+          <p id="ufundSummary">ยอดจัด ฿0</p>
+        </div>
+      </section>
+
+      <section class="panel stock-panel" id="stock">
+        <header class="stock-header">
+          <button class="icon-home" type="button" data-back-home aria-label="กลับหน้า Home">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10.5V20h12v-9.5M10 20v-6h4v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div>
+            <h2>Studio7</h2>
+            <p id="stockStatus">Stock 242</p>
+          </div>
+        </header>
+        <div class="stock-content">
+          <div class="stock-search">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.35-4.35M10.8 18.1a7.3 7.3 0 1 1 0-14.6 7.3 7.3 0 0 1 0 14.6Z" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <input id="stockSearch" type="search" placeholder="ค้นหาชื่อหรือรหัสสินค้า..">
+          </div>
+          <div class="stock-filters">
+            <select id="stockCategory" aria-label="Category"><option value="">All Category</option></select>
+            <select id="stockSubCategory" aria-label="Sub Category"><option value="">All Sub Category</option></select>
+          </div>
+          <div class="stock-list" id="stockList"></div>
+        </div>
+      </section>
+
+      <section class="panel true-panel" id="true">
+        <div class="true-shell">
+          <div class="true-top">
+            <button class="icon-home" type="button" data-back-home aria-label="กลับหน้า Home">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10.5V20h12v-9.5M10 20v-6h4v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <h2 class="true-logo">true<span>5G</span></h2>
+            <span></span>
+          </div>
+          <div class="true-section"><div class="true-label">Product</div><div class="choice-grid" id="trueProducts"></div></div>
+          <div class="true-section"><div class="true-label">Model</div><div class="choice-grid" id="trueModels"></div></div>
+          <div class="true-section"><div class="true-label">Capacity</div><div class="choice-grid" id="trueStorages"></div></div>
+          <div class="true-section"><div class="true-label">เลือก Package</div><select class="package-select" id="truePackages"></select></div>
+          <article class="true-card">
+            <h3>รายละเอียด Package</h3>
+            <p id="trueProductText">-</p>
+            <p id="truePackageText">-</p>
+            <div class="true-breakdown">
+              <span>ราคาสินค้า<strong id="trueBase">฿0</strong></span>
+              <span>ส่วนลด<strong id="trueDiscount">฿0</strong></span>
+              <span>จ่ายล่วงหน้า<strong id="trueAdvance">฿0</strong></span>
+            </div>
+          </article>
+          <article class="true-total">
+            <h3>ราคาสุทธิ</h3>
+            <strong id="trueNet">฿0</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel viewer-panel" id="guild">
+        <div class="panel-toolbar">
+          <div>
+            <h2>Guild line</h2>
+            <p>ไฟล์แนวทางหน้าร้าน</p>
+          </div>
+          <button class="back-button" type="button" data-back-home>Back</button>
+        </div>
+        <div class="image-stack" id="guildViewer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Copyright © 2026 Studio7 Thailand.</div>
+      <div>All rights reserved. | สาขา Passion Rayong ID 242</div>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
