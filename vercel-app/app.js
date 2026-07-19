@@ -5,11 +5,16 @@ const inventoryFallback = [
   { sku: 'IP15-128-BLK', name: 'iPhone 15 128GB Black', qty: 8, category: 'iPhone', subCategory: 'iPhone 15' }
 ];
 
-const cards = [
-  { title: 'KBank Credit Card', detail: '0% นาน 10 เดือน' },
-  { title: 'SCB Credit Card', detail: 'เครดิตเงินคืนตามเงื่อนไขธนาคาร' },
-  { title: 'Krungsri First Choice', detail: 'ผ่อนสบายและ Ufund ตามเงื่อนไข' }
-];
+const cardPromotionFallback = {
+  period: '1 - 31 July 2026',
+  title: 'Card Promotion',
+  subtitle: 'Apple Product แบ่งจ่ายสบาย ๆ',
+  items: [
+    { bank: 'SCB', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['เครดิตเงินคืนสูงสุด 38,000 บาท', 'แลกคะแนนรับเครดิตเงินคืนสูงสุด 60%'] },
+    { bank: 'KBANK', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['สินค้า Apple เครดิตเงินคืนสูงสุด 12,000 บาท', 'แลกคะแนนรับเครดิตเงินคืน 12%'] },
+    { bank: 'First Choice', headline: 'ผ่อน 0% สูงสุด 10 เดือน', details: ['หรือดอกเบี้ยพิเศษ 0.79% สูงสุด 24 เดือน', 'เครดิตเงินคืนสูงสุด 14,000 บาท'] }
+  ]
+};
 
 const trueCatalog = {
   iPhone: {
@@ -125,13 +130,38 @@ async function loadPromotionConfig() {
   }
 }
 
-function renderCards() {
-  document.getElementById('cardGrid').innerHTML = cards.map(card => `
-    <article class="info-card">
-      <h3>${card.title}</h3>
-      <p>${card.detail}</p>
-    </article>
-  `).join('');
+function renderCards(config = cardPromotionFallback) {
+  const target = document.getElementById('cardGrid');
+  const items = Array.isArray(config.items) ? config.items : [];
+  target.innerHTML = `
+    <section class="card-promo-hero">
+      <span>${config.period || ''}</span>
+      <h3>${config.subtitle || config.title || 'Card Promotion'}</h3>
+    </section>
+    <div class="card-promo-list">
+      ${items.map(item => `
+        <article class="card-promo-item">
+          <div class="bank-name">${item.bank}</div>
+          <div class="bank-detail">
+            <h3>${item.headline}</h3>
+            ${Array.isArray(item.details) && item.details.length ? `
+              <ul>${item.details.map(detail => `<li>${detail}</li>`).join('')}</ul>
+            ` : ''}
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
+async function loadCardPromotions() {
+  try {
+    const response = await fetch('/config/card-promotions.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Card promotion returned ${response.status}`);
+    renderCards(await response.json());
+  } catch (error) {
+    renderCards(cardPromotionFallback);
+  }
 }
 
 function calculateUfund() {
@@ -291,7 +321,7 @@ document.getElementById('truePackages').addEventListener('input', event => {
   renderTrue();
 });
 
-renderCards();
+loadCardPromotions();
 calculateUfund();
 renderTrue();
 loadPromotionConfig();
