@@ -6,11 +6,6 @@
       "src": "/assets/iphone-promotion.jpg"
     },
     {
-      "title": "Apple Watch Promotion",
-      "alt": "โปรโมชั่น Apple Watch",
-      "src": "/assets/watch-promotion.jpg"
-    },
-    {
       "title": "Mac & iPad Promotion 1",
       "alt": "โปรโมชั่น Mac และ iPad หน้า 1",
       "src": "/assets/mac-ipad-1.jpg"
@@ -24,16 +19,6 @@
       "title": "Mac & iPad Promotion 3",
       "alt": "โปรโมชั่น Mac และ iPad หน้า 3",
       "src": "/assets/mac-ipad-3.jpg"
-    },
-    {
-      "title": "Mac & iPad Promotion 4",
-      "alt": "โปรโมชั่น Mac และ iPad หน้า 4",
-      "src": "/assets/mac-ipad-4.jpg"
-    },
-    {
-      "title": "Mac & iPad Promotion 5",
-      "alt": "โปรโมชั่น Mac และ iPad หน้า 5",
-      "src": "/assets/mac-ipad-5.jpg"
     }
   ],
   "guildLine": [
