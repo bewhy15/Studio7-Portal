@@ -11,7 +11,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { min-height: 100%; }
+html, body { min-height: 100%; overflow-x: hidden; }
 body {
   margin: 0;
   font-family: Inter, "Noto Sans Thai", "Segoe UI", Arial, sans-serif;
@@ -22,7 +22,7 @@ button, input, select { font: inherit; }
 button, select { cursor: pointer; }
 
 .app {
-  width: min(690px, 100%);
+  width: min(690px, 100vw);
   min-height: 100svh;
   margin: 0 auto;
   background: white;
@@ -30,7 +30,7 @@ button, select { cursor: pointer; }
   grid-template-rows: 1fr auto;
 }
 
-.panel { display: none; min-height: 100%; padding: 22px; }
+.panel { display: none; min-height: 100%; padding: clamp(16px, 4vw, 22px); }
 .panel.active { display: block; }
 .home-panel { padding: 0; }
 .home-hero {
@@ -394,16 +394,152 @@ footer {
 .app:not(.home-mode) footer { display: none; }
 
 @media (max-width: 520px) {
-  .panel { padding: 18px; }
+  .app { width: 100vw; }
+  .panel { padding: 16px; }
   .home-panel, .stock-panel, .true-panel { padding: 0; }
-  .home-hero { padding-top: 88px; }
-  .home-menu { gap: 20px; }
+  .home-hero {
+    gap: 18px;
+    padding: 64px 18px 38px;
+  }
+  .home-hero h1 { font-size: clamp(3.05rem, 16vw, 3.8rem); }
+  .home-hero p {
+    min-height: 46px;
+    padding: 0 24px;
+    font-size: 1rem;
+  }
+  .home-divider { margin: 0 20px 24px; }
+  .home-menu {
+    gap: 14px;
+    padding: 0 20px 34px;
+  }
+  .home-card {
+    min-height: 76px;
+    border-radius: 18px;
+    padding: 0 42px 0 24px;
+    font-size: 1.12rem;
+  }
+  .home-card::after {
+    right: 24px;
+    font-size: 2.1rem;
+  }
+  .dark-tone { margin-top: 14px; }
   .panel-toolbar { display: grid; grid-template-columns: 1fr auto; }
-  .image-card img { min-width: 680px; }
-  .stock-content { padding: 0 24px 24px; }
+  .panel-toolbar h2 { font-size: 1.35rem; }
+  .panel-toolbar p { font-size: .92rem; }
+  .back-button { min-height: 40px; padding: 0 13px; }
+  .image-card img { min-width: 0; width: 100%; }
+  .calc-grid, .simple-grid { gap: 12px; }
+  .result-box strong { font-size: 2rem; }
+  .stock-header {
+    min-height: 150px;
+    padding: 34px 24px 48px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    gap: 14px;
+  }
+  .stock-header h2 { font-size: 1.95rem; }
+  .stock-header p { margin-top: 10px; font-size: .98rem; }
+  .icon-home {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-home svg { width: 22px; height: 22px; }
+  .stock-content { padding: 0 18px 22px; transform: translateY(-24px); }
+  .stock-search { margin-bottom: 16px; }
+  .stock-search svg {
+    left: 18px;
+    width: 26px;
+    height: 26px;
+  }
+  .stock-search input {
+    min-height: 64px;
+    border-radius: 16px;
+    padding-left: 56px;
+    font-size: .98rem;
+  }
   .stock-filters { grid-template-columns: 1fr 1fr; }
-  .stock-item { padding: 20px 24px; }
+  .stock-filters {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .stock-filters select {
+    min-height: 52px;
+    padding: 0 10px;
+    font-size: .92rem;
+  }
+  .stock-list { gap: 14px; }
+  .stock-item {
+    min-height: 96px;
+    gap: 12px;
+    border-radius: 16px;
+    padding: 16px 18px;
+  }
+  .stock-item small { font-size: .82rem; }
+  .stock-item h3 { font-size: .98rem; }
+  .stock-qty {
+    min-width: 56px;
+    font-size: 1.65rem;
+  }
+  .stock-qty span { font-size: .86rem; }
+  .true-shell {
+    gap: 14px;
+    padding: 18px 18px 28px;
+  }
+  .true-top { grid-template-columns: 40px 1fr 40px; }
+  .true-logo {
+    min-height: 58px;
+    padding: 0 20px;
+    border-radius: 16px;
+    font-size: 2.15rem;
+  }
+  .true-section { gap: 10px; }
+  .true-label {
+    min-height: 48px;
+    border-radius: 16px;
+    font-size: 1rem;
+  }
   .choice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .true-chip {
+    min-height: 50px;
+    border-radius: 15px;
+    padding: 8px 10px;
+    font-size: .92rem;
+    line-height: 1.25;
+  }
+  .package-select {
+    min-height: 54px;
+    border-radius: 16px;
+    font-size: .92rem;
+  }
+  .true-card, .true-total {
+    border-radius: 18px;
+    padding: 15px;
+  }
+  .true-card h3, .true-total h3 { font-size: 1.05rem; }
+  .true-card p { font-size: .92rem; }
   .true-breakdown { grid-template-columns: 1fr; }
   .true-total { justify-self: stretch; }
+  footer { padding: 18px; font-size: .86rem; }
+}
+
+@media (max-width: 380px) {
+  .home-menu { padding-inline: 14px; }
+  .home-card {
+    min-height: 70px;
+    padding-left: 18px;
+    font-size: 1rem;
+  }
+  .stock-content { padding-inline: 14px; }
+  .stock-filters { grid-template-columns: 1fr; }
+  .stock-item {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .stock-qty {
+    justify-self: start;
+    text-align: left;
+  }
+  .true-shell { padding-inline: 14px; }
+  .choice-grid { gap: 8px; }
+  .true-chip { font-size: .86rem; }
 }
