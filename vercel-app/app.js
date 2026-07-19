@@ -49,30 +49,46 @@ const packageGroups = {
   iphone17: [
     { name: 'TRUE-iPhone 17 Series MNPSharePlan 699 ไม่มีจ่ายล่วงหน้า - ลด 2000 OpenMKT', discount: 2000, advance: 0, detail: 'Net 40 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE-iPhone 17 Series MNPSharePlan 799 ไม่มีจ่ายล่วงหน้า - ลด 3500 OpenMKT', discount: 3500, advance: 0, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 240 นาที' },
+    { name: 'TRUE-iPhone 17 Series MNPSharePlan 799 จ่ายล่วงหน้า 1605 - ลด 2000 OpenMKT', discount: 2000, advance: 1605, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE-iPhone 17 Series MNPSharePlan 1399 ไม่มีจ่ายล่วงหน้า - ลด 7000 OpenMKT', discount: 7000, advance: 0, detail: 'Net Unlimited โทรทุกเครือข่าย 500 นาที' },
+    { name: 'TRUE-iPhone 17 Series Existing SharePlan/Renew 1399 ไม่มีจ่ายล่วงหน้า - ลด 7000 OpenMKT', discount: 7000, advance: 0, detail: 'Net Unlimited โทรทุกเครือข่าย 500 นาที' },
     { name: 'TRUE-iPhone 17 Series New 699 จ่ายล่วงหน้า 107 - ลด 3600 MASS', discount: 3600, advance: 107, detail: 'Net 40 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE-iPhone 17 Series New 899 จ่ายล่วงหน้า 535 - ลด 4700 MASS', discount: 4700, advance: 535, detail: 'Net 60 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 280 นาที' },
     { name: 'TRUE-iPhone 17 Series New 1199 จ่ายล่วงหน้า 1070 - ลด 5500 MASS', discount: 5500, advance: 1070, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 350 นาที' },
+    { name: 'TRUE-iPhone 17 Series New 1299 จ่ายล่วงหน้า 1605 - ลด 6700 MASS', discount: 6700, advance: 1605, detail: 'Net Unlimited โทรทุกเครือข่าย 400 นาที' },
     { name: 'TRUE-iPhone 17 Series New 1499 จ่ายล่วงหน้า 2247 - ลด 7700 MASS', discount: 7700, advance: 2247, detail: 'Net Unlimited โทรทุกเครือข่าย 650 นาที' }
   ],
   ipadAir: [
     { name: 'TRUE iPad Air 11/13 M4 Wi-Fi NEW 599 จ่ายล่วงหน้า 107 - ลด 2200 MASS', discount: 2200, advance: 107, detail: 'Net 25 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE iPad Air 11/13 M4 Wi-Fi NEW 699 จ่ายล่วงหน้า 107 - ลด 2500 MASS', discount: 2500, advance: 107, detail: 'Net 40 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE iPad Air 11/13 M4 Wi-Fi NEW 899 จ่ายล่วงหน้า 963 - ลด 3200 MASS', discount: 3200, advance: 963, detail: 'Net 60 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 280 นาที' },
-    { name: 'TRUE iPad Air 11/13 M4 Wi-Fi NEW 1199 จ่ายล่วงหน้า 1284 - ลด 4300 MASS', discount: 4300, advance: 1284, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 350 นาที' }
+    { name: 'TRUE iPad Air 11/13 M4 Wi-Fi NEW 1199 จ่ายล่วงหน้า 1284 - ลด 4300 MASS', discount: 4300, advance: 1284, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 350 นาที' },
+    { name: 'TRUE iPad Air 11/13 M4 Wi-Fi NEW 1299 จ่ายล่วงหน้า 1498 - ลด 4700 MASS', discount: 4700, advance: 1498, detail: 'Net Unlimited โทรทุกเครือข่าย 400 นาที' }
   ],
   ipadPro: [
     { name: 'TRUE iPad Pro 11/13 M5 NEW 599 จ่ายล่วงหน้า 642 - ลด 2200 MASS', discount: 2200, advance: 642, detail: 'Net 25 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE iPad Pro 11/13 M5 NEW 699 จ่ายล่วงหน้า 749 - ลด 2500 MASS', discount: 2500, advance: 749, detail: 'Net 40 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE iPad Pro 11/13 M5 NEW 899 จ่ายล่วงหน้า 963 - ลด 3200 MASS', discount: 3200, advance: 963, detail: 'Net 60 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
-    { name: 'TRUE iPad Pro 11/13 M5 NEW 1199 จ่ายล่วงหน้า 1284 - ลด 4300 MASS', discount: 4300, advance: 1284, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' }
+    { name: 'TRUE iPad Pro 11/13 M5 NEW 1199 จ่ายล่วงหน้า 1284 - ลด 4300 MASS', discount: 4300, advance: 1284, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
+    { name: 'TRUE iPad Pro 11/13 M5 NEW 1299 จ่ายล่วงหน้า 1498 - ลด 4700 MASS', discount: 4700, advance: 1498, detail: 'Net Unlimited โทรทุกเครือข่าย 400 นาที' }
   ],
   all: [
     { name: 'TRUE New 499 ไม่มีจ่ายล่วงหน้า - ลด 1500 บาท', discount: 1500, advance: 0, detail: 'Net 20 GB หลังหมด Data เหลือ Speed 1MB. โทรทุกเครือข่าย 200 นาที' },
+    { name: 'TRUE New 399 เน็ต 50 GB ไม่มีจ่ายล่วงหน้า - ลด 1000 บาท OpenMKT', discount: 1000, advance: 0, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 1MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE New 699 ไม่มีจ่ายล่วงหน้า - ลด 2000 บาท', discount: 2000, advance: 0, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
+    { name: 'TRUE New 599 ไม่มีจ่ายล่วงหน้า - ลด 2200 บาท', discount: 2200, advance: 0, detail: 'Net 25 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE New 899 ไม่มีจ่ายล่วงหน้า - ลด 3000 บาท', discount: 3000, advance: 0, detail: 'Net 60 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 280 นาที' },
+    { name: 'TRUE New 699 จ่ายล่วงหน้า 749 - ลด 3700 บาท', discount: 3700, advance: 749, detail: 'Net 40 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
+    { name: 'TRUE New 499 จ่ายล่วงหน้า 321 - ลด 1500 บาท สัญญา 6 เดือน', discount: 1500, advance: 321, detail: 'Net 20 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
+    { name: 'TRUE New 599 จ่ายล่วงหน้า 535 - ลด 1800 บาท สัญญา 6 เดือน', discount: 1800, advance: 535, detail: 'Net 25 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
+    { name: 'TRUE New 899 จ่ายล่วงหน้า 749 - ลด 2300 บาท สัญญา 6 เดือน', discount: 2300, advance: 749, detail: 'Net 25 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 280 นาที' },
+    { name: 'TRUE ExistingRenew799 จ่าย 1605 - ลด 3500 บาท', discount: 3500, advance: 1605, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 350 นาที' },
+    { name: 'TRUE ExistingRenew899 จ่าย 2675 - ลด 5000 บาท', discount: 5000, advance: 2675, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 280 นาที' },
+    { name: 'TRUE MNPShare Plan 699 จ่ายล่วงหน้า 1284 - ลด 2000 บาท', discount: 2000, advance: 1284, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE MNPShare Plan 799 ไม่มีจ่ายล่วงหน้า - ลด 3500 บาท', discount: 3500, advance: 0, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 240 นาที' },
-    { name: 'TRUE MNPShare Plan 799 จ่ายล่วงหน้า 1605 - ลด 3500 บาท', discount: 3500, advance: 1605, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 240 นาที' }
+    { name: 'TRUE MNPShare Plan 799 จ่ายล่วงหน้า 1605 - ลด 3500 บาท', discount: 3500, advance: 1605, detail: 'Net 50 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 240 นาที' },
+    { name: 'TRUE MNPShare Plan 799 จ่ายล่วงหน้า 3210 - ลด 4500 บาท', discount: 4500, advance: 3210, detail: 'Net 100 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 240 นาที' },
+    { name: 'TRUE MNPShare Plan 999 จ่ายล่วงหน้า 3210 - ลด 4300 บาท', discount: 4300, advance: 3210, detail: 'Net 70 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 350 นาที' }
   ]
 };
 
