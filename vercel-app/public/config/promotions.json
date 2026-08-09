@@ -1,24 +1,24 @@
 {
   "salePromotions": [
     {
-      "title": "iPhone Promotion",
-      "alt": "โปรโมชั่น iPhone",
-      "src": "/assets/iphone-promotion.jpg"
+      "title": "iPhone Promotion | 3 - 31 August 2026",
+      "alt": "โปรโมชั่น iPhone วันที่ 3 ถึง 31 สิงหาคม 2026",
+      "src": "/assets/sale-aug-iphone.png?v=20260809"
     },
     {
-      "title": "Mac & iPad Promotion 1",
-      "alt": "โปรโมชั่น Mac และ iPad หน้า 1",
-      "src": "/assets/mac-ipad-1.jpg?v=20260719-1340"
+      "title": "iPad Promotion | 1 - 13 August 2026",
+      "alt": "โปรโมชั่น iPad วันที่ 1 ถึง 13 สิงหาคม 2026",
+      "src": "/assets/sale-aug-ipad.png?v=20260809"
     },
     {
-      "title": "Mac & iPad Promotion 2",
-      "alt": "โปรโมชั่น Mac และ iPad หน้า 2",
-      "src": "/assets/mac-ipad-2.jpg?v=20260719-1340"
+      "title": "iPad Price List | 1 - 13 August 2026",
+      "alt": "สรุปราคา iPad และราคาเพื่อการศึกษา",
+      "src": "/assets/sale-aug-ipad-price.png?v=20260809"
     },
     {
-      "title": "Mac & iPad Promotion 3",
-      "alt": "โปรโมชั่น Mac และ iPad หน้า 3",
-      "src": "/assets/mac-ipad-3.jpg?v=20260719-1340"
+      "title": "Apple Pencil Promotion | 1 - 13 August 2026",
+      "alt": "โปรโมชั่น Apple Pencil วันที่ 1 ถึง 13 สิงหาคม 2026",
+      "src": "/assets/sale-aug-pencil.png?v=20260809"
     }
   ],
   "guildLine": [
