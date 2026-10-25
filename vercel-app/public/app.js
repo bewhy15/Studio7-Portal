@@ -50,6 +50,30 @@ const trueCatalog = {
 };
 
 const packageGroups = {
+  iphone18: [
+    { name: 'TRUE-iPhone 18 Series New 399 ไม่มีจ่ายล่วงหน้า - ลด 1000', discount: 1000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series New 699 ไม่มีจ่ายล่วงหน้า - ลด 2000', discount: 2000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series New 899 ไม่มีจ่ายล่วงหน้า - ลด 3000', discount: 3000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series New 499 ไม่มีจ่ายล่วงหน้า - ลด 1500', discount: 1500, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series New 599 ไม่มีจ่ายล่วงหน้า - ลด 2200', discount: 2200, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series New 699 จ่ายล่วงหน้า 749 - ลด 3700', discount: 3700, advance: 749, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series EXT SharePlan / EXT Renew 799 จ่ายล่วงหน้า 1605 - ลด 3500', discount: 3500, advance: 1605, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series EXT SharePlan / EXT Renew 1199 จ่ายล่วงหน้า 1605 - ลด 5500', discount: 5500, advance: 1605, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series EXT SharePlan / EXT Renew 1399 ไม่มีจ่ายล่วงหน้า - ลด 6000', discount: 6000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series MNPSharePlan 699 ไม่มีจ่ายล่วงหน้า - ลด 2000', discount: 2000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series MNPSharePlan 799 ไม่มีจ่ายล่วงหน้า - ลด 3500', discount: 3500, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series ย้ายค่าย AIS MNPSharePlan 999 ไม่มีจ่ายล่วงหน้า - ลด 5500', discount: 5500, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series MNPSharePlan 1399 ไม่มีจ่ายล่วงหน้า - ลด 7000', discount: 7000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE MNP Change MSISDN 5GX 999 ไม่มีจ่ายล่วงหน้า - ลด 5500', discount: 5500, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE MNP Change MSISDN 5GX 1399 ไม่มีจ่ายล่วงหน้า - ลด 7000', discount: 7000, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 599 ไม่มีจ่ายล่วงหน้า - ลด 3100', discount: 3100, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 699 ไม่มีจ่ายล่วงหน้า - ลด 3600', discount: 3600, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 899 ไม่มีจ่ายล่วงหน้า - ลด 4700', discount: 4700, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 5GX 999 ไม่มีจ่ายล่วงหน้า - ลด 5200', discount: 5200, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 5GX 1199 ไม่มีจ่ายล่วงหน้า - ลด 6200', discount: 6200, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 5GX 1299 ไม่มีจ่ายล่วงหน้า - ลด 6700', discount: 6700, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' },
+    { name: 'TRUE-iPhone 18 Series Renew 5GX 1499 ไม่มีจ่ายล่วงหน้า - ลด 7700', discount: 7700, advance: 0, detail: 'รายละเอียดตามเงื่อนไขแพ็กเกจ True' }
+  ],
   iphone15: [
     { name: 'TRUE-iPhone 15 128GB New599 จ่าย 107 - ลด 3300 Mass', discount: 3300, advance: 107, detail: 'Net 25 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
     { name: 'TRUE-iPhone 15 128GB New699 จ่าย 107 - ลด 4000 Mass', discount: 4000, advance: 107, detail: 'Net 40 GB หลังหมด Data เหลือ Speed 2MB. โทรทุกเครือข่าย 200 นาที' },
@@ -255,7 +279,8 @@ function getSelectedItem() {
 function getTruePackages() {
   const groups = [];
   if (trueState.product === 'iPhone') {
-    if (trueState.model === 'iPhone 15') groups.push(...packageGroups.iphone15);
+    if (['iPhone 18 Pro', 'iPhone 18 Pro Max', 'iPhone DUO'].includes(trueState.model)) groups.push(...packageGroups.iphone18);
+    else if (trueState.model === 'iPhone 15') groups.push(...packageGroups.iphone15);
     else if (trueState.model === 'iPhone 16') groups.push(...packageGroups.iphone16);
     else if (['iPhone 17', 'iPhone 17e', 'iPhone 17 Pro', 'iPhone 17 Pro Max', 'iPhone Air'].includes(trueState.model)) groups.push(...packageGroups.iphone17);
   }
