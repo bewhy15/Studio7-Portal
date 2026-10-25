@@ -1,24 +1,39 @@
 {
   "salePromotions": [
     {
-      "title": "iPhone Promotion | 3 - 31 August 2026",
-      "alt": "โปรโมชั่น iPhone วันที่ 3 ถึง 31 สิงหาคม 2026",
-      "src": "/assets/sale-aug-iphone.png?v=20260809"
+      "title": "iPhone Promotion | 28 September - 2 November 2026",
+      "alt": "ตารางราคาโปรโมชั่น iPhone วันที่ 28 กันยายน ถึง 2 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-iphone.png?v=20261025"
     },
     {
-      "title": "iPad Promotion | 1 - 13 August 2026",
-      "alt": "โปรโมชั่น iPad วันที่ 1 ถึง 13 สิงหาคม 2026",
-      "src": "/assets/sale-aug-ipad.png?v=20260809"
+      "title": "Apple Watch SE 3 | 22 October - 15 November 2026",
+      "alt": "โปรโมชั่น Apple Watch SE 3 วันที่ 22 ตุลาคม ถึง 15 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-watch-se3.png?v=20261025"
     },
     {
-      "title": "iPad Price List | 1 - 13 August 2026",
-      "alt": "สรุปราคา iPad และราคาเพื่อการศึกษา",
-      "src": "/assets/sale-aug-ipad-price.png?v=20260809"
+      "title": "AirPods & Adapter | 22 October - 12 November 2026",
+      "alt": "โปรโมชั่น AirPods และ Adapter วันที่ 22 ตุลาคม ถึง 12 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-airpods-adapter.png?v=20261025"
     },
     {
-      "title": "Apple Pencil Promotion | 1 - 13 August 2026",
-      "alt": "โปรโมชั่น Apple Pencil วันที่ 1 ถึง 13 สิงหาคม 2026",
-      "src": "/assets/sale-aug-pencil.png?v=20260809"
+      "title": "iPad Promotion | 23 October - 12 November 2026",
+      "alt": "โปรโมชั่น iPad วันที่ 23 ตุลาคม ถึง 12 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-ipad.png?v=20261025"
+    },
+    {
+      "title": "Mac Promotion | 23 October - 12 November 2026",
+      "alt": "โปรโมชั่น Mac วันที่ 23 ตุลาคม ถึง 12 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-mac.png?v=20261025"
+    },
+    {
+      "title": "Apple Pencil Promotion | 23 October - 12 November 2026",
+      "alt": "โปรโมชั่น Apple Pencil วันที่ 23 ตุลาคม ถึง 12 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-pencil.png?v=20261025"
+    },
+    {
+      "title": "iPad Air M4 Trade-in | 23 October - 12 November 2026",
+      "alt": "โปรโมชั่น Trade-in สำหรับ iPad Air M4 วันที่ 23 ตุลาคม ถึง 12 พฤศจิกายน 2026",
+      "src": "/assets/sale-oct-ipad-tradein.jpg?v=20261025"
     }
   ],
   "guildLine": [
