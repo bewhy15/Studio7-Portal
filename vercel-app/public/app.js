@@ -6,18 +6,31 @@ const inventoryFallback = [
 ];
 
 const cardPromotionFallback = {
-  period: '1 - 31 July 2026',
+  period: '1 - 31 October 2026',
   title: 'Card Promotion',
   subtitle: 'Apple Product แบ่งจ่ายสบาย ๆ',
+  notice: 'สินค้า iPhone 18 Pro และ iPhone 18 Pro Max ไม่ร่วมรายการส่งเสริมการขายนี้',
   items: [
-    { bank: 'SCB', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['เครดิตเงินคืนสูงสุด 38,000 บาท', 'แลกคะแนนรับเครดิตเงินคืนสูงสุด 60%'] },
-    { bank: 'KBANK', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['สินค้า Apple เครดิตเงินคืนสูงสุด 12,000 บาท', 'แลกคะแนนรับเครดิตเงินคืน 12%'] },
-    { bank: 'First Choice', headline: 'ผ่อน 0% สูงสุด 10 เดือน', details: ['หรือดอกเบี้ยพิเศษ 0.79% สูงสุด 24 เดือน', 'เครดิตเงินคืนสูงสุด 14,000 บาท'] }
+    { bank: 'SCB', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['เครดิตเงินคืนสูงสุด 24,000 บาท', 'สินค้าโซลาร์ไม่ร่วมโปรโมชั่น', 'แลกคะแนนรับเครดิตเงินคืนสูงสุด 60%', 'เมื่อผ่อนชำระ + แลกคะแนน ณ จุดขาย'] },
+    { bank: 'KBANK', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['แลกคะแนนรับเครดิตเงินคืน 12%', 'เมื่อผ่อนชำระหรือชำระเต็มจำนวน + ใช้คะแนนเท่ายอดใช้จ่าย'] },
+    { bank: 'Krungsri', headline: 'ผ่อน 0% สูงสุด 10 เดือน', details: [] },
+    { bank: 'First Choice', headline: 'ผ่อน 0% สูงสุด 10 เดือน', details: ['หรือดอกเบี้ยพิเศษ 0.69% สูงสุด 36 เดือน', 'เครดิตเงินคืนสูงสุด 14,000 บาท', 'แลกคะแนนรับเครดิตเงินคืน 15%', 'เมื่อผ่อนชำระ + ใช้คะแนนเท่ายอดใช้จ่าย'] },
+    { bank: 'First Choice Pay Later', headline: '0% Pay Later ซื้อวันนี้ เริ่มผ่อน 2 เดือนข้างหน้า', details: ['บริการผ่อนชำระสินค้าผ่านบัตรกรุงศรีเฟิร์สช้อยส์', 'เพิ่มความสะดวกในการบริหารการใช้จ่าย', 'ปลอดชำระ 2 รอบบิลแรก'] },
+    { bank: 'KTC', headline: 'ผ่อน 0% 6 เดือน', details: ['หรือดอกเบี้ยพิเศษ 0.59% สูงสุด 20 เดือน', 'แลกคะแนนรับเครดิตเงินคืนสูงสุด 15%', 'เมื่อผ่อนชำระ + ใช้คะแนนเท่ายอดใช้จ่าย'] },
+    { bank: 'UOB', headline: 'ผ่อน 0% สูงสุด 36 เดือน', details: ['สินค้า Apple & สินค้าไอที เครดิตเงินคืนสูงสุด 15,000 บาท', 'รับ GrabFood e-coupon สูงสุด 7,500 บาท รวมสูงสุด 22,500 บาท', 'สินค้าโซลาร์ รับเครดิตเงินคืนสูงสุด 20,400 บาท', 'แลกคะแนนรับส่วนลด 12%'] },
+    { bank: 'BBL', headline: 'ผ่อน 0% สูงสุด 10 เดือน', details: [] },
+    { bank: 'AEON', headline: 'ผ่อน 0% สูงสุด 6 เดือน', details: ['หรือดอกเบี้ยพิเศษ 0.59% สูงสุด 10 เดือน'] },
+    { bank: 'AEON iPhone', headline: 'ผ่อน 0% 18, 24 เดือน', details: ['เฉพาะสินค้า iPhone ทุกรุ่น', 'ยกเว้น iPhone 17 Pro และ iPhone 17 Pro Max'] },
+    { bank: 'AEON Long Pay', headline: 'ผ่อนนาน 48 เดือน ดอกเบี้ย 0.99%', details: ['ร่วมทุกสินค้า 14,500 บาทขึ้นไป'] },
+    { bank: 'POINTX', headline: 'รับพอยท์พิเศษคืนสูงสุด 50%', details: ['เมื่อสแกนจ่ายด้วยคะแนน POINTX ผ่าน QR พร้อมเพย์ที่ร้าน', 'ชำระผ่านเครื่องรูดบัตร'] }
   ]
 };
 
 const trueCatalog = {
   iPhone: {
+    'iPhone 18 Pro': [{ storage: '256GB', price: 48900 }, { storage: '512GB', price: 56900 }, { storage: '1TB', price: 72900 }, { storage: '2TB', price: 96900 }],
+    'iPhone 18 Pro Max': [{ storage: '256GB', price: 52900 }, { storage: '512GB', price: 60900 }, { storage: '1TB', price: 76900 }, { storage: '2TB', price: 100900 }],
+    'iPhone DUO': [{ storage: '256GB', price: 79900 }, { storage: '512GB', price: 87900 }, { storage: '1TB', price: 103900 }, { storage: '2TB', price: 127900 }],
     'iPhone 17': [{ storage: '256GB', price: 29900 }, { storage: '512GB', price: 37900 }],
     'iPhone 17e': [{ storage: '256GB', price: 22900 }, { storage: '512GB', price: 30900 }],
     'iPhone 17 Pro': [{ storage: '256GB', price: 43900 }, { storage: '512GB', price: 51900 }, { storage: '1TB', price: 59900 }],
@@ -137,6 +150,7 @@ function renderCards(config = cardPromotionFallback) {
     <section class="card-promo-hero">
       <span>${config.period || ''}</span>
       <h3>${config.subtitle || config.title || 'Card Promotion'}</h3>
+      ${config.notice ? `<p class="card-promo-notice">${config.notice}</p>` : ''}
     </section>
     <div class="card-promo-list">
       ${items.map(item => `
@@ -243,7 +257,7 @@ function getTruePackages() {
   if (trueState.product === 'iPhone') {
     if (trueState.model === 'iPhone 15') groups.push(...packageGroups.iphone15);
     else if (trueState.model === 'iPhone 16') groups.push(...packageGroups.iphone16);
-    else groups.push(...packageGroups.iphone17);
+    else if (['iPhone 17', 'iPhone 17e', 'iPhone 17 Pro', 'iPhone 17 Pro Max', 'iPhone Air'].includes(trueState.model)) groups.push(...packageGroups.iphone17);
   }
   if (['iPad Air 11', 'iPad Air 13'].includes(trueState.model)) groups.push(...packageGroups.ipadAir);
   if (['iPad Pro 11', 'iPad Pro 13'].includes(trueState.model)) groups.push(...packageGroups.ipadPro);
